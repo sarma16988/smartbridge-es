@@ -1,0 +1,23 @@
+
+Q.Print an integer, float and double values using different access specifiers
+
+Syntax:
+#include <iostream>
+using namespace std;
+int main()
+{
+    int a;
+    float b;
+    double c;
+    cout<<"Enter the first number";
+    cin>>a;
+    cout<<"Enter the second number:";
+    cin>>b;
+    cout<<"Enter the third number:";
+    cin>>c;
+    cout<<"Integer:"<<a;
+    cout<<"Float:"<<b;
+    cout<<"Double:"<<c;
+    return 0;
+}
+   
