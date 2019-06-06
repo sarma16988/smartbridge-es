@@ -1,0 +1,46 @@
+Q.print 1 to 120 using for loop, while loop and do while loop.
+
+
+
+Syntax:(for loop)
+#include <iostream>
+using namespace std;
+int main()
+{
+  for(int i=1;i<121;i++)
+  {
+      cout<<i<<"\n";
+  }
+  return 0;
+}
+   
+
+Syntax:(While loop)
+#include <iostream>
+using namespace std;
+int main()
+{
+  int i=1;
+  while(i<121)
+  {
+      cout<<i<<"\n";
+      i++;
+  }
+  return 0;
+}
+
+
+Syntax:(do while)
+#include <iostream>
+using namespace std;
+int main()
+{
+  int i=1;
+ do
+  {
+      cout<<i<<"\n";
+      i++;
+  }while(i<121);
+  return 0;
+}
+   
