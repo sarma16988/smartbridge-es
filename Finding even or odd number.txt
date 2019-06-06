@@ -1,0 +1,22 @@
+Q. Write a program to check even or odd number.
+
+
+syntax:
+#include <iostream>
+using namespace std;
+int main()
+{
+    int n,a;
+    cout<<"Enter the number:";
+    cin>>n;
+    a=n%2;
+    if(a==0)
+    {
+        cout<<"Entered number is a even number ";
+    }
+    else
+    {
+        cout<<"Entered number is a odd number ";
+    }
+    return 0;
+}
