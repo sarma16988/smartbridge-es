@@ -1,0 +1,17 @@
+Q.If int x=10, y=8 then write a program to find x^y , x | y and x&y.
+
+Syntax:
+#include <iostream>
+using namespace std;
+int main()
+{
+int x=10,y=8;
+int a,b,c;
+a=x^y;
+b=x|y;
+c=x&y;
+cout<<a<<"\n";
+cout<<b<<"\n";
+cout<<c<<"\n";
+return 0;
+}
