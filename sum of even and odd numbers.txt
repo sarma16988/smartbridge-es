@@ -1,0 +1,25 @@
+Q. sum of even and odd numbers up to 100.
+
+
+Syntax:
+#include <iostream>
+using namespace std;
+int main()
+{
+int a,e=0,o=0;
+for(int i=1;i<101;i++)
+{
+    a=i%2;
+    if(a==0)
+    {
+        e=e+i;
+    }
+    else
+    {
+        o=o+i;
+    }
+}
+cout<<"The sum of even numbers is:"<<e;
+cout<<"The sum of odd numbers is:"<<o;
+return 0;
+} 
