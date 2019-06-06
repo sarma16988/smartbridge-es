@@ -1,0 +1,24 @@
+Q. Take two numbers and find out the greater and smaller number.
+
+Syntax:
+#include <iostream>
+using namespace std;
+int main()
+{
+int a,b;
+cout<<"Enter the first number:";
+cin>>a;
+cout<<"Enter the second number:";
+cin>>b;
+if(a<b)
+{
+    cout<<"The first number is a smaller number"<<a<<"\n";
+    cout<<"The second number is the greater number"<<b<<"\n" ;
+}
+else
+{
+    cout<<"The second number is a smaller number"<<b<<"\n";
+    cout<<"The first number is a greater number"<<a<<"\n";
+}
+return 0;
+}
