@@ -1,0 +1,41 @@
+Q. A program to switch between two patterns using 2 switches
+
+
+
+
+#ifndef F_CPU
+#define F_CPU 16000000UL
+#endif
+#include<avr/io.h>
+#ifndef F_CPU
+#define F_CPU 16000000UL
+#endif
+#include<avr/io.h>
+#include<util/delay.h>
+int main(void)
+{
+	DDRC|=(1<<PC0);
+	DDRD&=~(1<<PD0);
+	DDRB&=~(1<<PB0);
+	while(1)
+	{
+		if((PIND&(1<<PD0))==0)
+		{
+			for(int i=0;i<8;i++)
+			{
+				PORTC|=(1<<i);
+				_delay_ms(500);
+				PORTC&=~(1<<i);
+			}
+		}
+		if((PINB&(1<<PB0))==0)
+		{
+			for(int i=7;i>=0;i--)
+			{
+				PORTC|=(1<<i);
+				_delay_ms(500);
+				PORTC&=~(1<<i);
+			}
+		}
+	}
+}
