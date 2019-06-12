@@ -1,0 +1,22 @@
+#ifndef F_CPU
+#define F_CPU 16000000UL
+#endif
+#include<avr/io.h>
+#include<util/delay.h>
+int main(void)
+{
+	DDRA|=(1<<PA0);
+	DDRB&=~(1<<PB0);
+	while(1)
+	{
+		if((PINA&(1<<PA0))==0)
+		{
+			PORTB|=(1<<PB0);
+		}
+		else
+		{
+			PORTB&=~(1<<PB0);
+		}
+		
+	}
+}
